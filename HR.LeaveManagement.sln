@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32802.440
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B01FB769-BA9F-4CF7-B6A8-E3107732725F}"
 EndProject
@@ -15,9 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{B33CC5B4-7466-469C-9B8F-8A767AEB52B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Domain", "HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj", "{34D0D05F-C628-44A5-9DDC-F13F86759B35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Domain", "HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj", "{34D0D05F-C628-44A5-9DDC-F13F86759B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Application", "HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj", "{58F428EC-5508-4326-97EB-E343FF138E54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Application", "HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj", "{58F428EC-5508-4326-97EB-E343FF138E54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Infrastructure", "HR.LeaveManagement.Infrastructure\HR.LeaveManagement.Infrastructure.csproj", "{B820CFC8-5690-4E5B-86F3-4F0F0CB09AD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Persistence", "HR.LeaveManagement.Persistence\HR.LeaveManagement.Persistence.csproj", "{626B1401-F588-440D-9E6F-5A7CB0D68CFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.API", "HR.LeaveManagement.API\HR.LeaveManagement.API.csproj", "{CCFF0B2C-95D3-49D9-90CC-896242744BE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{58F428EC-5508-4326-97EB-E343FF138E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58F428EC-5508-4326-97EB-E343FF138E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58F428EC-5508-4326-97EB-E343FF138E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B820CFC8-5690-4E5B-86F3-4F0F0CB09AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B820CFC8-5690-4E5B-86F3-4F0F0CB09AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B820CFC8-5690-4E5B-86F3-4F0F0CB09AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B820CFC8-5690-4E5B-86F3-4F0F0CB09AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626B1401-F588-440D-9E6F-5A7CB0D68CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626B1401-F588-440D-9E6F-5A7CB0D68CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626B1401-F588-440D-9E6F-5A7CB0D68CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626B1401-F588-440D-9E6F-5A7CB0D68CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFF0B2C-95D3-49D9-90CC-896242744BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFF0B2C-95D3-49D9-90CC-896242744BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFF0B2C-95D3-49D9-90CC-896242744BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFF0B2C-95D3-49D9-90CC-896242744BE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +62,9 @@ Global
 		{B33CC5B4-7466-469C-9B8F-8A767AEB52B7} = {B01FB769-BA9F-4CF7-B6A8-E3107732725F}
 		{34D0D05F-C628-44A5-9DDC-F13F86759B35} = {1E0077AC-EB5B-4E32-8381-11B1E7FC1DCD}
 		{58F428EC-5508-4326-97EB-E343FF138E54} = {1E0077AC-EB5B-4E32-8381-11B1E7FC1DCD}
+		{B820CFC8-5690-4E5B-86F3-4F0F0CB09AD7} = {6013CFB6-2D23-41D0-B4D1-B7A7B3654EED}
+		{626B1401-F588-440D-9E6F-5A7CB0D68CFA} = {6013CFB6-2D23-41D0-B4D1-B7A7B3654EED}
+		{CCFF0B2C-95D3-49D9-90CC-896242744BE0} = {D366E63C-0549-451E-B63A-57F872858A62}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {255B5367-3C78-41DA-91C5-E0C50D938B9F}
