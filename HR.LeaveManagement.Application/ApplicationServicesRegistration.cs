@@ -13,10 +13,15 @@ namespace HR.LeaveManagement.Application
         public static IServiceCollection ConfigureApplicationServices(this IServiceCollection services)
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddMediatR(x => x.RegisterServicesFromAssemblies(typeof(LibraryEntrypoint).Assembly));
+            //services.AddMediatR(Assembly.GetExecutingAssembly());
             //services.AddAutoMapper(typeof(MappingProfile));
 
             return services;
         }
+    }
+
+    internal class LibraryEntrypoint
+    {
     }
 }
